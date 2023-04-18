@@ -46,12 +46,10 @@ function createLiImg(filterValue) {
     })
     .join(' ');
 }
-
+    
 function createFilters() {
   const filtersObj = galleryItems.map(({ filter }) => filter);
   const unique = [...new Set(filtersObj)];
-  // Array.flatMap()
-  // Array.flat()
   const filter = unique
     .map(item => {
       return `<li class="filter-item">
